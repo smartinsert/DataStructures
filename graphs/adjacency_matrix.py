@@ -25,7 +25,7 @@ class Graph:
         edges = []
         for i in range(self.numvertex):
             for j in range(self.numvertex):
-                if (self.adjMatrix[i][j] != -1):
+                if self.adjMatrix[i][j] != -1:
                     edges.append((self.verticeslist[i], self.verticeslist[j], self.adjMatrix[i][j]))
         return edges
 
